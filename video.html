@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="mediaelementplayer.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="mediaelement-and-player.min.js"></script>
+</head>
+<body>
+<video id="video" src="guqin.flv" width="500px" height="300px;" ></video>
+<script type="text/javascript">
+	$('#video').mediaelementplayer({
+            features:['playpause','current','progress','duration','jumpforward','volume','time','fullscreen'],
+            success: function(mediaElement, originalNode) {
+               
+            }
+        });
+</script>
+</body>
+</html>
